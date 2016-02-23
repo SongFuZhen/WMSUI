@@ -9,10 +9,50 @@
     <script src="bootstrap-3.3.5-dist/js/jquery-latest.js"></script>
     <script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
     <!-- link end -->
+    <style>
+        .PerGroups {
+            width: 250px;
+            height: 180px;
+            background: #f2f2f2;
+            border-radius: 4px;
+        }
+
+        .PerGroupsName {
+            font-size: 20px;
+            text-align: center;
+            padding: 5px 0 0 0;
+        }
+
+        .PreGroupsDescription {
+            margin: -20px 0 0 0;
+            height: 85px;
+            text-overflow: ellipsis;
+            overflow: auto;
+        }
+
+        .PerGroupsIcon > i {
+            font-size: 2em;
+            margin: 10px 25px 0 25px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-
-
+<div class="PerGroups">
+    <div class="PerGroupsName">
+        Name
+    </div>
+    <hr style="border-color: #ccc;margin: 2px 0 20px 0;">
+    <div class="PreGroupsDescription">
+        <strong>This is the Permission Groups Description.</strong>
+    </div>
+    <hr style="border-color: #ccc;margin: 0">
+    <div class="PerGroupsIcon">
+        <i class="glyphicon glyphicon-pencil" style="color: steelblue;" title="编辑该权限组"></i>
+        <i class="glyphicon glyphicon-cog" style="color: green;" title="修改改组权限"></i>
+        <i class="glyphicon glyphicon-trash" style="color: darkred;" title="删除该权限组"></i>
+    </div>
+</div>
 </body>
 </html>
 
